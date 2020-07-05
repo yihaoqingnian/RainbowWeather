@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <android.support.v7.widget.CardView
+        android:id="@+id/item_city_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="5dp"
+        app:contentPadding="10dp"
+        app:cardBackgroundColor="#778899"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/item_delete_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_laji"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:id="@+id/item_delete_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北京"
+                android:textSize="30sp"
+                android:textColor="#F5FFFA"
+                android:layout_toRightOf="@id/item_delete_iv"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
